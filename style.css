@@ -17,18 +17,9 @@ canvas {
   opacity: 0;
 }
 
-/* #resetBtn {
-  margin: 0;
-  position: absolute;
-  top: 61%;
-  left: 52%;
-  -ms-transform: translate(-50%, 50%);
-  transform: translate(-50%, -50%);
-} */
 
-/* CSS */
 #resetBtn {
-  /* margin: 0; */
+  margin: 0;
   top: 69%;
   left: 52%;
   -ms-transform: translate(-50%, 50%);
