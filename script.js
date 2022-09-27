@@ -158,6 +158,13 @@ function drawGameOver() {
   ctx.fillText('High Score: ' + highScore, canvas.width / 2 + 25, canvas.height / 2 + 85);
 
 
+  const resetBtn = document.createElement("BUTTON");
+  resetBtn.setAttribute("id", "resetBtn")
+  resetBtn.innerHTML = 'Try Again!';
+  document.body.appendChild(resetBtn);
+  resetBtn.addEventListener("click", function () {
+    location.reload();
+  });
 }
 
 window.addEventListener('click', function(e) {
