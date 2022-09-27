@@ -31,8 +31,8 @@ canvas {
 /* CSS */
 #resetBtn {
   margin: 0;
-  top: 64%;
-  left: 51%;
+  top: 70%;
+  left: 52%;
   -ms-transform: translate(-50%, 50%);
   transform: translate(-50%, -50%);
   background-color: black;
