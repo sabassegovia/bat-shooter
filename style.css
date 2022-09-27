@@ -28,7 +28,7 @@ canvas {
 
 /* CSS */
 #resetBtn {
-  margin: 0;
+  /* margin: 0; */
   top: 70%;
   left: 52%;
   -ms-transform: translate(-50%, 50%);
