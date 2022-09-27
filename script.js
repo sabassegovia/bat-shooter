@@ -134,11 +134,30 @@ function drawScore() {
 }
 
 function drawGameOver() {
+
+  //compare current score to high score
+  let highScore = localStorage.getItem('highScore');
+  if (score > highScore) {
+    localStorage.setItem('highScore', score);
+    highScore = localStorage.getItem('highScore');
+  }
+
+
+
   ctx.textAlign = 'center';
   ctx.fillStyle = 'black';
   ctx.fillText('GAME OVER! Final Score: ' + score, canvas.width / 2, canvas.height / 2);
   ctx.fillStyle = 'white';
   ctx.fillText('GAME OVER! Final Score: ' + score, canvas.width / 2 + 5, canvas.height / 2 + 5);
+
+
+  ctx.textAlign = 'center';
+  ctx.fillStyle = 'black';
+  ctx.fillText('High Score: ' + highScore, canvas.width / 2 + 20 , canvas.height / 2 + 80);
+  ctx.fillStyle = 'white';
+  ctx.fillText('High Score: ' + highScore, canvas.width / 2 + 25, canvas.height / 2 + 85);
+
+
 }
 
 window.addEventListener('click', function(e) {
